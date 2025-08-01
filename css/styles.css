@@ -48,6 +48,9 @@ main {
   padding: 2rem;
   max-width: 900px;
   margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 section {
@@ -57,16 +60,86 @@ section {
 h2 {
   color: #111133;
   margin-bottom: 10px;
+  border-bottom: 2px solid #0a58ca;
+  padding-bottom: 5px;
 }
 
 ul {
-  list-style: none;
   padding-left: 0;
 }
 
 li {
   margin-bottom: 8px;
   font-size: 1.05em;
+}
+
+/* Artículos como tarjetas */
+article {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+article h3 {
+  font-size: 1.3rem;
+  color: #0a0a23;
+  margin-bottom: 0.5rem;
+}
+
+section ul,
+article ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+
+/* Botones y enlaces destacados */
+a.button,
+button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #0a58ca;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+a.button:hover,
+button:hover {
+  background-color: #084298;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+  margin-top: 1.5rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 0.5rem;
 }
 
 /* Pie de página */
